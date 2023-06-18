@@ -23,7 +23,7 @@
 		<java.version>17</java.version>
 
 		<!--set this to your docker acct name-->
-		<docker.image.prefix>springframeworkguru</docker.image.prefix>
+		<docker.image.prefix>pierrotadesso</docker.image.prefix>
 
 		<!--Set to name of project-->
 		<docker.image.name>springbootdocker</docker.image.name>
@@ -79,7 +79,7 @@
 							<build>
 								<dockerFileDir>${project.basedir}/src/main/docker/</dockerFileDir>
 
-                                <!--copies artficact to docker build dir in target-->
+                                <!--copies artifact to docker build dir in target-->
 								<assembly>
 									<descriptorRef>artifact</descriptorRef>
 								</assembly>
