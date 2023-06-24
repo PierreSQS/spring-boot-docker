@@ -73,6 +73,7 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.43.0</version>
 				<configuration>
+					<verbose>true</verbose>
 					<images>
 						<image>
 							<name>${docker.image.prefix}/${docker.image.name}</name>
@@ -88,6 +89,11 @@
 									<tag>${project.version}</tag>
 								</tags>
 							</build>
+							<run>
+								<ports>
+									<port>8080:8080</port>
+								</ports>
+							</run>
 						</image>
 					</images>
 				</configuration>
